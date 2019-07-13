@@ -65,7 +65,7 @@ export default {
 
     async submit() {
       const state = this.getState();
-      this.url = `docs?q=${this.searchQuery}&seq_annotations__isnull=${state}&offset=${this.offset}`;
+      this.url = `docs?q=${this.searchQuery}&ordering=created_at&seq_annotations__isnull=${state}&offset=${this.offset}`;
       await this.search();
       this.pageNumber = 0;
     },
