@@ -8,7 +8,7 @@ from .views import DocumentList, DocumentDetail
 from .views import AnnotationList, AnnotationDetail
 from .views import TextUploadAPI, TextDownloadAPI, CloudUploadAPI
 from .views import StatisticsAPI
-
+#test
 
 urlpatterns = [
     path('me', Me.as_view(), name='me'),
